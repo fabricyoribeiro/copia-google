@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root{
+            --altura-link-container: 112px;
+            --largura-link-container: 112px;
+            --fonte-padrao: 'Inter', sans-serif;
+        }
+        nav {
+            padding: 8px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav > a {
+            margin: 8px;
+            text-decoration: none;
+            font-family: var(--fonte-padrao);
+            font-size: small;
+            font-weight: 500;
+        }
+        #link-perfil {
+            margin: 0;
+        }
+        #link-perfil > img{
+            border-radius: 50%;
+            margin: 0px 5px;
+        }
+        main {
+            margin-top: 100px;
+            text-align: center;
+        }
+        #barra-pesquisa {
+            margin: auto;
+            max-width: 530px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 8px 15px;
+            border-radius: 40px;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.322);
+        }
+
+        /* #barra-pesquisa:focus-within {
+            quando tiver clicado
+        } */
+
+        section {
+            display: inline-block;
+            width: 60%;
+        }
+        input {
+            width: 80%;
+            border: none;
+            outline: none;
+        }
+
+        input::placeholder{
+            font-weight: 600;
+        }
+
+        img#logo {
+            display: flex;
+            margin: auto;
+            margin-bottom: 35px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        span {
+            font-size: .9em;
+        }
+        
+        #container{
+            margin: auto;
+            margin-top: 20px;
+            max-width: 577px;
+        }
+        #container > a:hover {
+            background-color: rgba(163, 163, 163, 0.212);
+        }
+
+        @media (max-width:588px){
+            #container > .metade{
+                display: none;
+            }
+            #container {
+                width: 70%;
+            }
+        }
+
+        #container > a {
+            margin: 0px -2px;
+            text-decoration: none;
+            font-family: var(--fonte-padrao);
+            display: inline-flex;
+            flex-direction: column;
+            background-color: transparent;
+            color: #000;
+            border-radius: 6px;
+            width: var(--altura-link-container);
+            height: var(--altura-link-container);
+            user-select: none;
+        }
+        #container > a > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: calc(var(--altura-link-container) / 2);
+            
+        }
+        #container > a > div > img {
+            background-color: rgba(216, 216, 216, 0.445);
+            padding: 12px;
+            border-radius: 50%;
+            margin-top: 15px;
+        }
+        /* body {
+            background-image: url(fundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        } */
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <img src="fundo.jpg"id="imagem-fundo"> -->
+
+    <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Imagens</a>
+        <a href="#" id="link-perfil">
+            <img src="eu.png">
+        </a>
+    </nav>
+    <main>
+        <img id="logo" src="logo.svg" alt="Logo">
+        <section>
+            <div id="barra-pesquisa">
+                <div>
+                    <img src="lupa.svg">
+                </div>
+                <input type="search" name="" id="" placeholder="Pesquise no Google ou escreva um URL">
+                <button>
+                    <img src="microfone.svg">
+                </button>
+            </div>
+        </section>
+        <div id="container">
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a class="metade" href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a class="metade" href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            </a>
+            <a class="metade" href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a class="metade" href="#">
+                <div>
+                    <img src="youtube.png">
+                </div>
+                <div>
+                    <span>YouTube</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+</body>
+</html>
