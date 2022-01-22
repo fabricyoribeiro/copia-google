@@ -39,7 +39,7 @@
         #barra-pesquisa {
             margin: auto;
             max-width: 530px;
-            display: flex;
+            /* display: flex; */
             align-items: center;
             justify-content: space-between;
             background-color: #fff;
@@ -130,6 +130,14 @@
             background-position: cover;
         } */
 
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .microfone {
+            justify-content: space-between;
+        }
 
     </style>
 </head>
@@ -146,13 +154,16 @@
         <img id="logo" src="logo.svg" alt="Logo">
         <section>
             <div id="barra-pesquisa">
-                <div>
-                    <img src="lupa.svg">
-                </div>
-                <input type="search" name="" id="" placeholder="Pesquise no Google ou escreva um URL">
-                <button>
-                    <img src="microfone.svg">
-                </button>
+                
+                <form name="pesquisa" action="http://www.google.com.br/search">
+                    <button>
+                        <img src="lupa.svg">
+                    </button>
+                    <input type="text" name="q" placeholder="Pesquise no Google ou escreva um URL">
+                    
+                    <img src="microfone.svg" class="microfone">
+                </form>
+
             </div>
         </section>
         <div id="container">
